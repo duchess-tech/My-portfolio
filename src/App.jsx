@@ -11,20 +11,28 @@ import './css/App.css'
 
 
 function App() {
-
   const aboutmeRef = useRef(null);
   const skillsRef = useRef(null);
   const myprojectRef = useRef(null);
   const toolsRef = useRef(null);
   const contactRef = useRef(null);
+  const refs = {
+    aboutmeRef: aboutmeRef,
+    skillsRef: skillsRef,
+    myprojectRef: myprojectRef,
+    toolsRef: toolsRef,
+    contactRef: contactRef
+  }
+
+
   return (
     <div>
-      <Nav aboutmeRef={aboutmeRef} skillsRef={skillsRef} myprojectRef={myprojectRef} toolsRef={toolsRef} contactRef={contactRef} />
-      <Aboutme aboutmeRef={aboutmeRef} />
-      <Skills skillsRef={skillsRef} />
-      <Myproject myprojectRef={myprojectRef} />
-      <Contact contactRef={contactRef} />
-      <Tools toolsRef={toolsRef} />
+      <Nav ref={refs} />
+      <Aboutme ref={refs} />
+      <Skills ref={refs} />
+      <Myproject ref={refs} />
+      <Contact ref={refs} />
+      <Tools ref={refs} />
       <Appreciation />
       <Footer />
     </div>

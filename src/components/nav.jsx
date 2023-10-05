@@ -4,32 +4,34 @@ import HamburgerMenu from '../utils/hamburgermenu';
 import { forwardRef, useRef } from 'react';
 
 
-const Nav = forwardRef(({ contactRef, aboutmeRef, skillsRef, myprojectRef }) => {
+const Nav = forwardRef((props, ref) => {
 
     const handleTocontact = () => {
-        contactRef.current.scrollIntoView({ behavior: 'smooth' });
+        ref.contactRef.current.scrollIntoView({ behavior: 'smooth' });
     };
     const handleToaboutme = () => {
-        aboutmeRef.current.scrollIntoView({ behavior: 'smooth' });
+        ref.aboutmeRef.current.scrollIntoView({ behavior: 'smooth' });
     };
     const handleToskills = () => {
-        skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+        ref.skillsRef.current.scrollIntoView({ behavior: 'smooth' });
     };
     const handletomyproject = () => {
-        myprojectRef.current.scrollIntoView({ behavior: 'smooth' });
+        ref.myprojectRef.current.scrollIntoView({ behavior: 'smooth' });
     };
 
 
     return (
-        <nav className="bg-navyblue px-5 py-4 sm:max-sm:hidden flex text-white lg:justify-around sm:justify-between ">
-            <h1 className='text-4xl'>Esther odedoyin</h1>
-            <div className='space-x-3 sm:hidden md:hidden lg:block'  >
+        <nav className="bg-navyblue sm:px-5 sm:py-4 2xl:block  sm:flex  text-center sm:p-3 sm:hidden   text-white 2xl:justify-between 2xl:flex  lg:justify-around sm:justify-between  ">
+            <div className='sm:w-1/3 w-full '>
+                <h1 className='lg:text-4xl md:text-4xl xl:text-4xl sm:text-2xl text-3xl'>Esther odedoyin</h1>
+            </div>
+            <div className='space-x-8 sm:hidden hidden md:hidden lg:block'  >
                 <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 hover:translate-y-1 hover:bg-indigo-300 transform ' onClick={handleToaboutme}>About me</button>
                 <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300hover:translate-y-1 hover:bg-indigo-300 delay-150 hover:translate-y-1 ' onClick={handleToskills}>My skills</button>
                 <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:bg-indigo-300 hover:translate-y-1 ' onClick={handletomyproject}>My project </button>
                 <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:translate-y-1 hover:bg-indigo-300 ' onClick={handleTocontact}>Contact me</button>
             </div>
-            <HamburgerMenu />
+            <HamburgerMenu handleToaboutme={handleToaboutme} handleTocontact={handleTocontact} handleToskills={handleToskills} handletomyproject={handletomyproject} />
 
 
         </nav>

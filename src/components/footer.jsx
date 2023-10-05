@@ -11,8 +11,8 @@ function Footer() {
 
     return (
 
-        <div className='lg:flex sm:p-6 bg-ash lg:items-center justify-around sm:text-center sm:column-reverse'>
-            <div className="lg:w-72 sm:w-full my-9 ">
+        <div className='lg:flex sm:p-2 bg-ash lg:items-center p-4 justify-around sm:text-center sm:column-reverse'>
+            <div className="lg:w-72 sm:w-full 2xl:my-9 my-2  w-full ">
                 <h1><FontAwesomeIcon icon={faLocationDot} color="rgb(31,41,55)" size="2x"></FontAwesomeIcon></h1>
                 <p>Address</p>
                 <p>No 16,Aho Agbeja estate,Ajibode UI Ibadan,Oyo State. </p>

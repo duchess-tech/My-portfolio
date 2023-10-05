@@ -12,7 +12,26 @@ export default {
       black: "#000000"
     },
     extend: {
-      // screens: { "sm": { "max": "640px" } }
+      theme: {
+        extend: {
+          animation: {
+            'custom-spin': 'customSpin 2s linear infinite',
+          },
+          // keyframes: {
+          //   customSpin: {
+          //     from: {
+          //       transform: 'rotate(0deg)',
+          //     },
+          //     to: {
+          //       transform: 'rotate(360deg)',
+          //     },
+          //   },
+          // },
+        }
+        // ,
+        // variants: {},
+        // plugins: [],
+      }
     },
   },
   plugins: [],
