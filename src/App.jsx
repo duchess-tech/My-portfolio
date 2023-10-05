@@ -6,8 +6,8 @@ import Footer from './components/footer'
 import Myproject from './components/myprojects'
 import Nav from './components/nav'
 import Skills from './components/skills'
-import Tools from './components/toolsused'
 import './css/App.css'
+import SocialMedia from './components/socialmedia'
 
 
 function App() {
@@ -26,13 +26,13 @@ function App() {
 
 
   return (
-    <div>
+    <div >
       <Nav ref={refs} />
       <Aboutme ref={refs} />
       <Skills ref={refs} />
       <Myproject ref={refs} />
       <Contact ref={refs} />
-      <Tools ref={refs} />
+      <SocialMedia ref={refs} />
       <Appreciation />
       <Footer />
     </div>

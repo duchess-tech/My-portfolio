@@ -6,10 +6,10 @@ import { FiDatabase } from "react-icons/fi"
 
 const Skills = forwardRef((props, ref) => {
     return (
-        <section ref={ref.skillsRef}>
-            <div className='2xl:w-1/2 w-full sm:w-full sm:mt-24 sm:p-2  bg-navyblue text-white  text-center ' >
-                <h1 className='2xl:text-5xl text-3xl text-center '>My skills</h1>
-                <div className='flex lg:justify-between sm:gap-6 2xl:p-9 p-3 gap-5 justify-center sm:flex-wrap sm:p-2 sm-full flex-wrap  m-auto 2xl:w-10/12 2xl:flex-start   sm:justify-center mb-12'>
+        <section className="2xl:flex 2xl:justify-center " ref={ref.skillsRef}>
+            <div className='2xl:w-1/2 xl:w-full w-full sm:w-full sm:mt-24 sm:p-2  bg-navyblue text-white  text-center ' >
+                <h1 className='2xl:text-5xl text-3xl text-center '>Stack</h1>
+                <div className='flex flex-none  sm:gap-6 2xl:p-9 p-3 gap-5 justify-center sm:flex-wrap sm:p-2 sm-full flex-wrap  m-auto 2xl:w-10/12 lg:w-10/12 2xl:flex-start   sm:justify-center mb-12'>
                     <div className='2xl:w-56 sm:w-32  w-32 h-40 2xl:h-56 border-4 md:mx-2 bg-white text-center  sm:my-5 rounded-2xl'>
                         <FontAwesomeIcon icon={faHtml5} size="5x" className="mt-9" color="black" ></FontAwesomeIcon>
                         <h2 className="text-black text-2xl">HTML</h2>
@@ -36,7 +36,7 @@ const Skills = forwardRef((props, ref) => {
                         <FontAwesomeIcon icon={faTeamspeak} size="5x" className="mt-9" color="#1f2937" ></FontAwesomeIcon>
                         <h2 className="text-black text-2xl">Tailwind</h2>
                     </div>
-                    <div className='2xl:w-56 sm:w-32 2xl: h-56  w-32 h-40  bg-white  text-center sm:my-5 rounded-2xl'>
+                    <div className='2xl:w-56 sm:w-32 2xl:h-56  w-32 h-40  bg-white  text-center sm:my-5 rounded-2xl'>
                         <FontAwesomeIcon icon={faGit} size="5x" className="mt-9" color="#1f2937" ></FontAwesomeIcon>
                         <h2 className="text-black text-2xl">Git</h2>
                     </div>

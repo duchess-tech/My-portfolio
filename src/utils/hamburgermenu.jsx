@@ -26,7 +26,7 @@ function HamburgerMenu(props) {
                             />
                         </svg>
                     </div>}
-                {!isOpen && <div className='sm:block lg:hidden hidden'>
+                {!isOpen && <div className='sm:hidden lg:hidden hidden'>
                     <RxHamburgerMenu color='white' size={30} />
                 </div>}
             </button>

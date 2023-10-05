@@ -12,27 +12,23 @@ export default {
       black: "#000000"
     },
     extend: {
-      theme: {
-        extend: {
-          animation: {
-            'custom-spin': 'customSpin 2s linear infinite',
-          },
-          // keyframes: {
-          //   customSpin: {
-          //     from: {
-          //       transform: 'rotate(0deg)',
-          //     },
-          //     to: {
-          //       transform: 'rotate(360deg)',
-          //     },
-          //   },
-          // },
-        }
-        // ,
-        // variants: {},
-        // plugins: [],
-      }
-    },
+      animation: {
+        'custom-spin': 'customSpin 2s linear infinite',
+      },
+      // keyframes: {
+      //   customSpin: {
+      //     from: {
+      //       transform: 'rotate(0deg)',
+      //     },
+      //     to: {
+      //       transform: 'rotate(360deg)',
+      //     },
+      //   },
+      // },
+    }
+    // ,
+    // variants: {},
+    // plugins: [],
   },
   plugins: [],
 }

@@ -2,19 +2,19 @@ import { forwardRef } from "react"
 
 const Myproject = forwardRef((props, ref) => {
     return (
-        <div className='2xl:w-1/2 sm:w-full full sm:mt-24 sm:p-6' ref={ref.myprojectRef}  >
-            <h1 className='2xl:text-5xl text-3xl text-center sm:mb-12 mb-8'>My project</h1>
-            <div className=" flex flex-wrap sm:flex-wrap sm:gap-8 gap-8 justify-around">
+        <div className='2xl:w-full sm:w-full   sm:mt-24 sm:p-6' ref={ref.myprojectRef}  >
+            <h1 className='2xl:text-5xl text-3xl text-center sm:mb-12 mb-8'>My projects</h1>
+            <div className="  flex flex-wrap sm:flex-wrap sm:gap-8 gap-8 justify-around">
 
-                <div className="2xl:w-96 2xl:h-96 w-72 h-[350px] border overflow-hidden border rounded-xl hover:animate-pulse">
+                <div className=" hover:scale-125  2xl:w-96 2xl:h-96 w-72 h-[350px] border overflow-hidden border rounded-xl hover:animate-pulse">
                     <img src="ecommerce.png" alt="Ecommerce-website-img" />
                 </div>
 
-                <div className="2xl:w-96 h-96 w-72 h-[350px] overflow-hidden  border hover:animate-pulse rounded-xl">
+                <div className=" hover:scale-125 2xl:w-96 h-96 w-72 h-[350px] overflow-hidden  border hover:animate-pulse rounded-xl">
                     <img src="tasktraker.jpg" alt="Tasktraker-img" />
                 </div>
 
-                <div className="2xl:w-96 h-96 w-72 h-[350px]   border rounded-xl hover:animate-pulse overflow-hidden">
+                <div className=" hover:scale-125 2xl:w-96 h-96 w-72 h-[350px]   border rounded-xl hover:animate-pulse overflow-hidden">
                     <img src="blog.jpg" className="h-full" alt="Tasktraker-img" />
                 </div>
 

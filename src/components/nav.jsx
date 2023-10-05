@@ -21,15 +21,16 @@ const Nav = forwardRef((props, ref) => {
 
 
     return (
-        <nav className="bg-navyblue sm:px-5 sm:py-4 2xl:block  sm:flex  text-center sm:p-3 sm:hidden   text-white 2xl:justify-between 2xl:flex  lg:justify-around sm:justify-between  ">
-            <div className='sm:w-1/3 w-full '>
-                <h1 className='lg:text-4xl md:text-4xl xl:text-4xl sm:text-2xl text-3xl'>Esther odedoyin</h1>
+        <nav className="bg-navyblue sm:px-5 sm:py-4 2xl:block  sm:flex  text-center sm:p-3 2xl:p-8   text-white 2xl:justify-between 2xl:flex  lg:justify-around sm:justify-between  items-baseline
+         ">
+            <div className='sm:w-1/3 w-full    '>
+                <h1 className=' lg:text-4xl md:text-4xl xl:text-4xl sm:text-xl text-3xl skew-x-3'>Esther odedoyin</h1>
             </div>
-            <div className='space-x-8 sm:hidden hidden md:hidden lg:block'  >
-                <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 hover:translate-y-1 hover:bg-indigo-300 transform ' onClick={handleToaboutme}>About me</button>
-                <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300hover:translate-y-1 hover:bg-indigo-300 delay-150 hover:translate-y-1 ' onClick={handleToskills}>My skills</button>
-                <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:bg-indigo-300 hover:translate-y-1 ' onClick={handletomyproject}>My project </button>
-                <button className='border  py-2 px-9  rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:translate-y-1 hover:bg-indigo-300 ' onClick={handleTocontact}>Contact me</button>
+            <div className='space-x-8 lg:space-x-2 sm:hidden hidden md:hidden lg:block'  >
+                <button className='border  py-2 px-9 w-40  rounded transition ease-in-out transform duration-300 hover:translate-y-1 hover:bg-indigo-300 transform ' onClick={handleToaboutme}>About me</button>
+                <button className='border  py-2 px-9  w-40 rounded transition ease-in-out transform duration-300hover:translate-y-1 hover:bg-indigo-300 delay-150 hover:translate-y-1 ' onClick={handleToskills}>Stack</button>
+                <button className='border  py-2 px-9  w-40 rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:bg-indigo-300 hover:translate-y-1 ' onClick={handletomyproject}>My project </button>
+                <button className='border  py-2 px-9  w-40  rounded transition ease-in-out transform duration-300 delay-150 hover:translate-y-1 hover:translate-y-1 hover:bg-indigo-300 ' onClick={handleTocontact}>Contact me</button>
             </div>
             <HamburgerMenu handleToaboutme={handleToaboutme} handleTocontact={handleTocontact} handleToskills={handleToskills} handletomyproject={handletomyproject} />
 

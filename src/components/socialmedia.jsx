@@ -2,26 +2,26 @@ import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { FacebookIcon, FacebookShareButton, FacebookShareCount, InstapaperIcon, LinkedinIcon, LinkedinShareButton, TwitterIcon, TwitterShareButton, WhatsappIcon, WhatsappShareButton } from "react-share"
 
-function Tools() {
+function SocialMedia() {
     return (
         <div className=' sm:w-full sm:mt-24 ' >
             <div className="flex 2xl:w-8/12 w-full m-auto justify-center flex-wrap 2xl:mt-5 gap-4  ">
 
 
                 <FacebookShareButton url="https://web.facebook.com/esther.odedoyin" >
-                    <FacebookIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full  bg-navyblue" />
+                    <FacebookIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full animate-spin  bg-navyblue" />
                 </FacebookShareButton>
 
                 <TwitterShareButton url="https://twitter.com/EstherOdedoyin">
-                    <TwitterIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full  bg-navyblue" />
+                    <TwitterIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full animate-spin  bg-navyblue" />
                 </TwitterShareButton>
 
                 <LinkedinShareButton url="https://www.linkedin.com/in/estherodedoyin1/">
-                    <LinkedinIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full  bg-navyblue" />
+                    <LinkedinIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full animate-spin bg-navyblue" />
                 </LinkedinShareButton>
 
                 <WhatsappShareButton url="https://alvo.chat/13hk">
-                    <WhatsappIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full  bg-navyblue" iconFillColor="navyblue" bgStyle={{ fil: "navyblue" }} />
+                    <WhatsappIcon className="2xl:h-14 2xl:w-14 w-12 h-12 rounded-full  animate-spin bg-navyblue" iconFillColor="navyblue" bgStyle={{ fil: "navyblue" }} />
                 </WhatsappShareButton>
                 {/* 
                 <div className='h-14 w-14 rounded-full  bg-navyblue  mb-6 mx-3 flex justify-center items-center '>
@@ -44,4 +44,4 @@ function Tools() {
         </div>
     )
 }
-export default Tools
+export default SocialMedia
